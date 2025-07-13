@@ -1,0 +1,181 @@
+/* Base setup */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Manrope', sans-serif !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+ 
+  font-family: 'Manrope', sans-serif;
+  background: linear-gradient(to bottom right, #e3edf7, #f5f5f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+/* Container */
+.login-container {
+    font-family: 'Manrope', sans-serif;
+
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-card {
+    font-family: 'Manrope', sans-serif;
+
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* Headings */
+.login-card h1 {
+    font-family: 'Manrope', sans-serif;
+
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.login-card h1 span {
+  color: #3f51b5;
+  font-family: 'Manrope', sans-serif;
+
+  font-weight: 600;
+}
+
+.subtext {
+  color: #7a7a7a;
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Form */
+form {
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+
+  flex-direction: column;
+  gap: 18px;
+}
+
+input {
+    font-family: 'Manrope', sans-serif;
+
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #3f51b5;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.1);
+}
+
+button {
+  padding: 12px 0;
+  font-family: 'Manrope', sans-serif;
+
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #000;
+}
+
+.error-message {
+  color: #e53935;
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 14px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  padding-left: 5px;
+}
+/* Profile page specific styles */
+.profile-card {
+  max-width: 500px;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.profile-details {
+  text-align: left;
+  margin: 30px 0;
+  font-size: 15.5px;
+  font-family: 'Manrope', sans-serif;
+
+  line-height: 1.8;
+  background-color: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.profile-details p {
+    font-family: 'Manrope', sans-serif;
+
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.back-btn {
+    font-family: 'Manrope', sans-serif;
+
+  margin-top: 10px;
+  background-color: #444;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #000;
+}
+.file-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.file-list li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.file-list a {
+  text-decoration: none;
+  color: #1e88e5;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.file-list a:hover {
+  color: #0d47a1;
+}
+

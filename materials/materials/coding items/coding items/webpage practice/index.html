@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Study Portal - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="login-container">
+    <div class="login-card">
+      <h1>Log in to<br><span>Study Portal</span></h1>
+      <p class="subtext">Enter your credentials to access materials</p>
+
+      <form id="loginForm">
+        <input type="text" id="regno" placeholder="Register Number" autocomplete="off" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <p id="errorMsg" class="error-message"></p>
+        <button type="submit">Log In →</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const users = {
+      "221121101179": "vinoth79",
+      "221121101157": ["sukesh57", "yogi85", "vignesh75"],
+      "221121101154": "srini54",
+      "221121101131": "ram31",
+      "221121101143": "saran43"
+    };
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const reg = document.getElementById('regno').value.trim();
+      const pass = document.getElementById('password').value.trim();
+      const error = document.getElementById('errorMsg');
+
+      const valid = users[reg];
+      if (Array.isArray(valid) ? valid.includes(pass) : valid === pass) {
+        sessionStorage.setItem("student", reg);
+        window.location.href = "study.html";
+      } else {
+        error.textContent = "Invalid register number or password.";
+      }
+    });
+  </script>
+</body>
+</html>
